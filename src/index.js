@@ -48,15 +48,11 @@ const WeatherApp = () => {
 
   const gradientColors = {
     Thunderstorm: ['#2c3e50', '#bdc3c7','white','white'],
-    Drizzle: ['#7f8c8d', '#bdc3c7','white','white'],
     Rain: ['#2c3e50', '#bdc3c7','white','white'],
     Snow: ['#1e3c72', '#bdc3c7','white','white'],
     Clear: ['#2980b9', '#6dd5fa', '#ffffff','white','white'],
     Clouds: ['#757f9a', '#bdc3c7','white','white'],
     Mist: ['#4ca1af', '#c4e0e5','white','white'],
-    Haze: ['#757f9a', '#bdc3c7','white','white'],
-    Dust: ['#4ca1af', '#c4e0e5','white','white'],
-    Fog: ['#4ca1af', '#c4e0e5','white','white'],
   };
 
  const bgColors = gradientColors[current.main] || gradientColors.Clear;
@@ -78,9 +74,9 @@ const WeatherApp = () => {
             YOUR LOCATION
           </Text>
           </View>
-            <Image
+            <Image //https://openweathermap.org/img/w/${current.icon}.png
               source={{
-                uri: `https://openweathermap.org/img/w/${current.icon}.png`,
+                uri: ` https://openweathermap.org/img/wn/${current.icon}.png`,
               }}
               style={styles.icon}
             />
@@ -137,7 +133,7 @@ const styles = StyleSheet.create({
       position:'relative',
       marginLeft:30,
       marginTop:40,
-      width:150,
+      width:200,
       height:150,
     },
     title:{   
