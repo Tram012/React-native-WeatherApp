@@ -8,11 +8,59 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
-      "**/*"
+      "INTERNET",
+    "ACCESS_NETWORK_STATE",
+    "VIBRATE",
+    "CAMERA",
+    "RECORD_AUDIO",
+    "MODIFY_AUDIO_SETTINGS",
+    "READ_PHONE_STATE",
+    "READ_EXTERNAL_STORAGE",
+    "WRITE_EXTERNAL_STORAGE",
+    "MANAGE_DOCUMENTS",
+    "READ_CONTACTS",
+    "WRITE_CONTACTS",
+    "GET_ACCOUNTS",
+    "ACCESS_FINE_LOCATION",
+    "ACCESS_COARSE_LOCATION",
+    "USE_CREDENTIALS",
+    "WAKE_LOCK",
+    "SYSTEM_ALERT_WINDOW",
+    "KILL_BACKGROUND_PROCESSES",
+    "SET_DEBUG_APP",
+    "SET_ALARM",
+    "BLUETOOTH",
+    "BLUETOOTH_ADMIN",
+    "BROADCAST_STICKY",
+    "READ_LOGS",
+    "WRITE_SETTINGS",
+    "SET_PREFERRED_APPLICATIONS",
+    "REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "NFC",
+    "READ_PHONE_NUMBERS",
+    "BROADCAST_SMS",
+    "SEND_SMS",
+    "READ_SMS",
+    "RECEIVE_SMS",
+    "WRITE_SMS",
+    "RECEIVE_BOOT_COMPLETED",
+    "INSTALL_SHORTCUT",
+    "UNINSTALL_SHORTCUT",
+    "READ_PROFILE",
+    "WRITE_PROFILE",
+    "READ_CALL_LOG",
+    "WRITE_CALL_LOG",
+    "PROCESS_OUTGOING_CALLS",
+    "USE_SIP",
+    "ACCEPT_HANDOVER",
+    "ANSWER_PHONE_CALLS",
+    "ACCESS_BACKGROUND_LOCATION",
+    "MANAGE_EXTERNAL_STORAGE",
+    "CONNECTIVITY_INTERNAL"
     ],
     "ios": {
       "supportsTablet": true
@@ -21,10 +69,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mart012.WeatherApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "83d702bf-1a4a-4258-b031-fc54d446e3a7"
+      }
     }
   }
 }
